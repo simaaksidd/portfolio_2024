@@ -28,7 +28,7 @@ const AboutPage = () => {
           <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
         {/* BIOGRAPHY DESC */}
           <p className="text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nunc neque, maximus quis gravida ac, eleifend a tellus. Integer at velit interdum, accumsan arcu sit amet, tincidunt risus. Suspendisse varius ut purus quis gravida. Suspendisse sed justo quam. Donec et lorem velit. Ut sollicitudin finibus mi vitae finibus. Donec magna nisi, porta a nibh accumsan, pulvinar placerat metus. Sed laoreet fringilla quam, eget lacinia nisl maximus a. Fusce consectetur odio ut mattis placerat. Quisque est augue, feugiat efficitur tellus et, lacinia porttitor nunc. Morbi sed augue et risus mattis vulputate sit amet vitae felis. Sed tempus mauris id purus lobortis malesuada. Nam ut lacus mi. Duis gravida justo neque, et tempor orci congue a. In massa dui, ornare malesuada tellus sit amet, accumsan fringilla quam.
+          Hey! I’m Simaak, a passionate and versatile full-stack software developer with a strong foundation in both front-end and back-end technologies. My journey in software development has been driven by a deep curiosity to understand how various technologies and interfaces work and a commitment to building collaborative and innovative solutions that make a difference. Scroll down If you want to see the tools I’ve used in educational and professional backgrounds along with a roadmap of my experience as a dev. 
           </p>
         {/* BIOGRAPHY QUOTE */}
           <span className="italic text-sm">

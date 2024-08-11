@@ -54,6 +54,8 @@ const PortfolioPage = () => {
       animate={{y:"0%"}}
       transition={{duration: 1}}
     >
+    <p>UNDER CONSTRUCTION</p>
+    <p>please contact me at simaaksidd1@gmail.com to get a link to my old portfolio</p>
           <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
             <h1 className="text-8xl pt-20">Curious?</h1>
             <div className="relative">
