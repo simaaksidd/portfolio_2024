@@ -32,7 +32,7 @@ const AboutPage = () => {
           </p>
         {/* BIOGRAPHY QUOTE */}
           <span className="italic text-sm">
-          "Problems worthy of attack prove their worth by hitting back." -Piet Hein
+            Problems worthy of attack prove their worth by hitting back. -Piet Hein
           </span>
         {/* BIOGRAPHY SIGN SVG */}
         {/* <div className="self-end">
