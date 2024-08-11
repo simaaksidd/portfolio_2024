@@ -78,25 +78,24 @@ const Navbar = () => {
                 ))}
             </div>
             {/* LOGO */}
-            <div className='md:hidden lg:flex xl:w-1/3 xl:justify-center'>
-                <Link href='/' className='text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center'>
-                <span className="text-white mr-1">Sim</span>
-                <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">Sidd</span>
+            <motion.div className='md:hidden lg:flex xl:w-1/3 xl:justify-center' width={24} height={24} whileHover={{scale: 1.1}} transition={{type: "spring", stiffness: 400, damping: 10 }}>
+                <Link href='/' className='text-sm rounded-md p-1 font-semibold flex items-center justify-center'>
+                    <motion.img src="/favicon.ico" alt=""  />
                 </Link>
-            </div>
+            </motion.div>
             {/* SOCIAL */}
             <div className="hidden md:flex gap-10 w-1/3 justify-center">
                 <Link href='https://github.com/simaaksidd' target="_blank">
-                    <Image src='/github.png' alt='' width={24} height={24} />
+                    <motion.img src='/github.png' alt='' width={24} height={24} whileHover={{scale: 1.1}} transition={{type: "spring", stiffness: 400, damping: 10 }} />
                 </Link>
                 <Link href='https://leetcode.com/u/SSiddiqi/' target="_blank">
-                    <Image src='/leetcode.png' alt='' width={24} height={24} />
+                    <motion.img src='/leetcode.png' alt='' width={24} height={24} whileHover={{scale: 1.1}} transition={{type: "spring", stiffness: 400, damping: 10 }}/>
                 </Link>
                 <Link href='https://www.linkedin.com/in/simaak-siddiqi/' target="_blank">
-                    <Image src='/linkedin.png' alt='' width={24} height={24} />
+                    <motion.img src='/linkedin.png' alt='' width={24} height={24} whileHover={{scale: 1.1}} transition={{type: "spring", stiffness: 400, damping: 10 }}/>
                 </Link>
                 <Link href='https://utaustin.joinhandshake.com/profiles/33478953' target="_blank">
-                    <Image src='/handshake.png' alt='' width={24} height={24} />
+                    <motion.img src='/handshake.png' alt='' width={24} height={24} whileHover={{scale: 1.1}} transition={{type: "spring", stiffness: 400, damping: 10 }}/>
                 </Link>
             </div>
             {/* RESPONSIVE MENU */}

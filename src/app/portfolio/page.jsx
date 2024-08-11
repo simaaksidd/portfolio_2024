@@ -54,37 +54,7 @@ const PortfolioPage = () => {
       animate={{y:"0%"}}
       transition={{duration: 1}}
     >
-      <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
-          My Works
-        </div>
-        <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
-          <motion.div 
-            style={{x}}
-            className="flex"
-          >
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-gray-200 to-gray-200"></div>
-          {items.map(item=>(
-            <div
-            className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`} 
-            key={item.id}
-            >
-              <div className="flex flex-col gap-8 text-black">
-                <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt='' fill/>
-                  </div>
-                  <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
-                  <Link href={item.link} className="flex justify-end" target="_blank">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-6 lg:text-lg text-gray-600 font-semibold m-4 rounded">Visit Repo</button>
-                  </Link>
-              </div>
-            </div>
-          ))}
-          </motion.div>
-        </div>
-      </div>
-          <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gradient-from-t bg-gradient-to-b from-blue-100">
+          <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
             <h1 className="text-8xl pt-20">Curious?</h1>
             <div className="relative">
               <motion.svg
@@ -105,7 +75,7 @@ const PortfolioPage = () => {
                   </textPath>
                 </text>
               </motion.svg>
-              <Link href="/contact" className="w-28 h-28 md:w-49 md:h-49 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center">
+              <Link href="/contact" className="w-28 h-28 md:w-49 md:h-49 absolute top-0 left-0 right-0 bottom-0 m-auto z-40 bg-black text-white rounded-full flex items-center justify-center">
                 Contact Me
               </Link>
             </div>

@@ -17,7 +17,7 @@ const AboutPage = () => {
     initial={{y:"-200vh"}}
     animate={{y:"0%"}}
     transition={{duration: 1}}
-  >
+    >
     {/* CONTAINER */}
     <div className=" h-full overflow-scroll lg:flex">
       {/* TEXT CONTAINER */}
