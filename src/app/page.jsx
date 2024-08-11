@@ -13,7 +13,7 @@ const Homepage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 pb-20">
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/3 relative flex items-center">
-          <Image src='/pfp.jpg' alt='' height={800} width={400} className="rounded-full"/>
+          <Image src='./pfp.jpg' alt='' height={800} width={400} className="rounded-full"/>
         </div>
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center pl-20">
