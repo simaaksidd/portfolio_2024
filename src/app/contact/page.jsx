@@ -9,14 +9,14 @@ const ContactPage = () => {
       animate={{y:"0%"}}
       transition={{duration: 1}}
       >
-      <section class="py-20 lg:py-[120px] relative z-10">
-        <div class="container">
-            <div class="flex flex-wrap lg:justify-between -mx-4">
-              <div class="w-full lg:w-1/2 xl:w-6/12 px-12 ">
-                  <div class="max-w-[570px] mb-5 lg:mb-0">
+      <section className="py-20 lg:py-[120px] relative z-10">
+        <div className="container">
+            <div className="flex flex-wrap lg:justify-between -mx-4">
+              <div className="w-full lg:w-1/2 xl:w-6/12 px-12 ">
+                  <div className="max-w-[570px] mb-5 lg:mb-0">
                     <div className="max-w-[570px] mb-5 lg:mb-0">
                       <h2
-                          class="
+                          className="
                           text-dark
                           font-bold
                           text-[32px]
@@ -38,20 +38,20 @@ const ContactPage = () => {
                         AVAILABLE
                       </motion.h2>
                     </div>
-                    <p class="text-base text-body-color leading-relaxed mb-9 mt-16">
+                    <p className="text-base text-body-color leading-relaxed mb-9 mt-16">
                         If you wish to contact me, thank you for taking the time out of your day to write to me! Please send your full name, email, phone number (optional), and send a small message describing your interest in me. I will be sure to respond to the message ASAP!
                     </p>
 
                   </div>
               </div>
-              <div class="w-full lg:w-1/2 xl:w-5/12 px-4 z-50">
-                  <div class="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg z-50">
+              <div className="w-full lg:w-1/2 xl:w-5/12 px-4 z-50">
+                  <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg z-50">
                     <form>
-                        <div class="mb-6 z-50">
+                        <div className="mb-6 z-50">
                           <input
                               type="text"
                               placeholder="Your Name"
-                              class="
+                              className="
                               w-full
                               rounded
                               py-3
@@ -64,11 +64,11 @@ const ContactPage = () => {
                               "
                               />
                         </div>
-                        <div class="mb-6 z-50">
+                        <div className="mb-6 z-50">
                           <input
                               type="email"
                               placeholder="Your Email"
-                              class="
+                              className="
                               w-full
                               rounded
                               py-3
@@ -81,11 +81,11 @@ const ContactPage = () => {
                               "
                               />
                         </div>
-                        <div class="mb-6 z-50">
+                        <div className="mb-6 z-50">
                           <input
                               type="text"
                               placeholder="Your Phone"
-                              class="
+                              className="
                               w-full
                               rounded
                               py-3
@@ -98,11 +98,11 @@ const ContactPage = () => {
                               "
                               />
                         </div>
-                        <div class="mb-6">
+                        <div className="mb-6">
                           <textarea
                               rows="6"
                               placeholder="Your Message"
-                              class="
+                              className="
                               w-full
                               rounded
                               py-3
@@ -119,7 +119,7 @@ const ContactPage = () => {
                         <div>
                           <button
                               type="submit"
-                              class="
+                              className="
                               w-full
                               text-white
                               bg-black
@@ -136,7 +136,7 @@ const ContactPage = () => {
                         </div>
                     </form>
                     <div>
-                        <span class="absolute -top-10 -right-9 z-[-1]">
+                        <span className="absolute -top-10 -right-9 z-[-1]">
                           <svg
                               width="100"
                               height="100"
@@ -152,7 +152,7 @@ const ContactPage = () => {
                                 />
                           </svg>
                         </span>
-                        <span class="absolute -right-10 top-[90px] z-[-1]">
+                        <span className="absolute -right-10 top-[90px] z-[-1]">
                           <svg
                               width="34"
                               height="134"
@@ -372,7 +372,7 @@ const ContactPage = () => {
                                 />
                           </svg>
                         </span>
-                        <span class="absolute -left-7 -bottom-7 z-[-1]">
+                        <span className="absolute -left-7 -bottom-7 z-[-1]">
                           <svg
                               width="107"
                               height="134"
