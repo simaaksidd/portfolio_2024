@@ -6,12 +6,6 @@ import Link from "next/link";
 const PortfolioPage = () => {
 
   return (
-    <motion.div 
-      className="h-full" 
-      initial={{y:"-200vh"}}
-      animate={{y:"0%"}}
-      transition={{duration: 1}}
-    >
     <section>
     <div className="py-16">
         <div className="mx-auto px-6 max-w-6xl">
@@ -197,33 +191,6 @@ const PortfolioPage = () => {
         </div>
     </div>
     </section>
-          <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-            <h1 className="text-8xl pt-20">Curious?</h1>
-            <div className="relative">
-              <motion.svg
-                animate={{ rotate: 360 }}
-                transition={{ duration: 8, ease: "linear", repeat: Infinity }}
-                viewBox="0 0 300 300"
-                className="w-64 h-64 md:w-[500px] md:h-[500px] "
-              >
-                <defs>
-                  <path
-                    id="circlePath"
-                    d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
-                  />
-                </defs>
-                <text fill="#000">
-                  <textPath xlinkHref="#circlePath" className="text-xl">
-                    Student and Full-Stack Developer
-                  </textPath>
-                </text>
-              </motion.svg>
-              <Link href="/contact" className="w-28 h-28 md:w-49 md:h-49 absolute top-0 left-0 right-0 bottom-0 m-auto z-40 bg-black text-white rounded-full flex items-center justify-center">
-                Contact Me
-              </Link>
-            </div>
-          </div>
-    </motion.div>
   )
 }
 
