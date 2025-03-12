@@ -1,10 +1,8 @@
 "use client"
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
 const PortfolioPage = () => {
-  const [hoveredCard, setHoveredCard] = React.useState(null);
   const [selectedCard, setSelectedCard] = React.useState(null);
 
   const projects = [
@@ -259,6 +257,8 @@ const PortfolioPage = () => {
                 key={project.id} 
                 className="relative group overflow-hidden rounded-xl bg-white border border-gray-200 min-h-[200px] cursor-pointer"
                 onClick={() => handleCardClick(project.id)}
+                whileHover={!selectedCard && { scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative flex flex-col items-center gap-4 p-6">
