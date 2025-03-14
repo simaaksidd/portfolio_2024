@@ -48,7 +48,7 @@ const PortfolioPage = () => {
       color: "gray-500",
       width: 2070,
       height: 1380,
-      icon: "visualization"
+      icon: "nextjs"
     },
     {
       id: 5,
@@ -211,7 +211,7 @@ const PortfolioPage = () => {
                         </g>
                       </svg>
         );
-      case 'visualization':
+      case 'nextjs':
         return (
           <svg className="flex relative justify-center items-center opacity-100 z-10" xmlns="http://www.w3.org/2000/svg" width="38px" height="38px" viewBox="0 0 15 15">
             <path fill="currentColor" d="m4.5 4.5l.405-.293A.5.5 0 0 0 4 4.5zm3 9.5A6.5 6.5 0 0 1 1 7.5H0A7.5 7.5 0 0 0 7.5 15zM14 7.5A6.5 6.5 0 0 1 7.5 14v1A7.5 7.5 0 0 0 15 7.5zM7.5 1A6.5 6.5 0 0 1 14 7.5h1A7.5 7.5 0 0 0 7.5 0zm0-1A7.5 7.5 0 0 0 0 7.5h1A6.5 6.5 0 0 1 7.5 1zM5 12V4.5H4V12zm-.905-7.207l6.5 9l.81-.586l-6.5-9zM10 4v6h1V4z"/>
@@ -249,7 +249,7 @@ const PortfolioPage = () => {
             {projects.map((project) => (
               <motion.div 
                 key={project.id} 
-                className="relative group overflow-hidden rounded-xl bg-white border border-gray-200 min-h-[200px] cursor-pointer"
+                className={`relative group overflow-hidden rounded-xl bg-white border-2 border-gray-200 min-h-[200px] cursor-pointer transition-all duration-300 hover:border-${project.color} hover:shadow-[0_0_15px_rgba(var(--${project.color}-rgb),0.5)]`}
                 onClick={() => handleCardClick(project.id)}
               >
                 <div className="absolute inset-0 flex items-center justify-center">
