@@ -8,13 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'pandas-blue': {
-          100: '#e7e6ed', // Much lighter shade
-          DEFAULT: '#130754', // Original color
-          900: '#000080', // Assuming a dark shade for contrast
-        },
-        'pandas-yellow': '#ffca00;',
-        'pandas-pink': '#e70488;',
+        'pandas-blue': '#130654',
+        'pandas-yellow': '#FFD43B',
+        'pandas-pink': '#E70488',
         'nodejs-green': {
           100: '#d9f9b1', // Lighter shade
           DEFAULT: '#8cd40d', // Original color
@@ -28,5 +24,35 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  safelist: [
+    'border-blue-500',
+    'border-green-500',
+    'border-orange-500',
+    'border-gray-500',
+    'border-indigo-500',
+    'border-emerald-500',
+    'from-blue-500',
+    'from-green-500',
+    'from-orange-500',
+    'from-gray-500',
+    'from-indigo-500',
+    'from-emerald-500',
+    {
+      pattern: /bg-.*-500/,
+    },
+  ],
+  plugins: [
+    function({ addBase }) {
+      addBase({
+        ':root': {
+          '--blue-500-rgb': '59, 130, 246',
+          '--green-500-rgb': '34, 197, 94',
+          '--orange-500-rgb': '249, 115, 22',
+          '--gray-500-rgb': '107, 114, 128',
+          '--indigo-500-rgb': '99, 102, 241',
+          '--emerald-500-rgb': '16, 185, 129',
+        }
+      })
+    }
+  ],
 };
