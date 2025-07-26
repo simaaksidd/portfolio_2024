@@ -47,9 +47,9 @@ const TransitionProvider = ({ children }) => {
                     initial={{height:"140vh"}}
                     animate={{height:"0vh", transition:{delay:0.5}}}
                 />
-                <div className="h-24">
+                <header className="fixed left-0 right-0 z-50 py-5">
                     <Navbar />
-                </div>
+                </header>
                 <div className="h-[calc(100vh-6rem)]">{children}</div>
             </div>
         </AnimatePresence>

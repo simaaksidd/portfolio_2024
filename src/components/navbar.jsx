@@ -5,9 +5,9 @@ import NavLink from "./navLink";
 import { motion } from "framer-motion";
 
 const links = [
-    {url: "./", title: "Home"},
-    {url: "./portfolio", title: "Portfolio"},
-    {url: "./contact", title: "Contact"},
+    {url: "#home", title: "Home"},
+    {url: "#portfolio", title: "Portfolio"},
+    {url: "#contact", title: "Contact"},
 ];
 
 const Navbar = () => {
@@ -72,7 +72,9 @@ const Navbar = () => {
             {/* LINKS */}
             <div className="hidden md:flex gap-4 w-1/3 ">
                 {links.map(link=>(
-                    <NavLink link={link} key={link.title}/>
+                    <div className="text-black hover:bg-black hover:text-white rounded-md" key ={link.title}>
+                        <NavLink link={link} key={link.title}/>
+                    </div>
                 ))}
             </div>
             {/* LOGO */}
@@ -102,13 +104,13 @@ const Navbar = () => {
                 <button className="w-10 h-8 flex flex-col justify-between z-50 relative" onClick={() => setOpen((prev) => !prev)}>
                     <motion.div variants={topVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black rounded origin-left"></motion.div>
                     <motion.div variants={centerVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black rounded"></motion.div>
-                    <motion.div variants={bottomVariants} animate= {open ? "opened" : "closed"}className="w-10 h-1 bg-black rounded origin-left"></motion.div>
+                    <motion.div variants={bottomVariants} animate= {open ? "opened" : "closed"} className="w-10 h-1 bg-black rounded origin-left"></motion.div>
                 </button>
                 {/*MENU LIST*/}
                 { open && (
                 <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40">
                     {links.map((link) => (
-                        <motion.div variants={listitemvariants} className="" key={link.title}>
+                        <motion.div variants={listitemvariants} className=""  key={link.title}>
                             <Link href={link.url}>
                                 {link.title}
                             </Link>
