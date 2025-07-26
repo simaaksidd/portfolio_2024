@@ -30,10 +30,10 @@ const Homepage = () => {
             <pre className="md:text-xl jusitfy-center text-center ">Senior at UT Austin <br/> Full-Stack Software Engineer <br/> Data Enthusiast  </pre>
               {/* BUTTONS */}
               <div className="w-full flex gap-4 justify-center">
-                <a href=".\portfolio">  
+                <a href="#portfolio">  
                   <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black" >View My Work</button>
                 </a>
-                <a href=".\contact">  
+                <a href="#contact">  
                   <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black">Contact Me</button>
                 </a>
               </div>
