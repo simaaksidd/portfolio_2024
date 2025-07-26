@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image";
 import { motion } from "framer-motion";
-import PortfolioPage from "./portfolio/page";
-import ContactPage from "./contact/page";
+import PortfolioPage from "../components/portfolio";
+import ContactPage from "../components/contact";
 
 const Homepage = () => {
   return (
