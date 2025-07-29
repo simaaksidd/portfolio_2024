@@ -47,7 +47,7 @@ const TransitionProvider = ({ children }) => {
                     initial={{height:"140vh"}}
                     animate={{height:"0vh", transition:{delay:0.5}}}
                 />
-                <header className="fixed left-0 right-0 z-10 py-5">
+                <header className="fixed left-0 right-0 z-10 py-2 bg-gray-200 bg-opacity-90">
                     <Navbar />
                 </header>
                 <div className="h-[calc(100vh-6rem)]">{children}</div>

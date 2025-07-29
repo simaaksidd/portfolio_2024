@@ -12,8 +12,8 @@ const Homepage = () => {
       animate={{y:"0%"}}
       transition={{duration: 1}}
     >
-      <section id="home" className="pt-40">
-        <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 pb-20 items-center">
+      <section id="home" className="pt-20">
+        <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 py-20 items-center">
           {/* IMAGE CONTAINER */}
           <div className="md:h-1/2 md:w-1/2 sm:h-1/2 sm:w-1/2 lg:h-full lg:w-1/3 relative flex items-center justify-center">
             <Image src='./pfp.jpg' alt='' height={800} width={400} className="rounded-full"/>
@@ -27,7 +27,7 @@ const Homepage = () => {
               </svg>
             </div>
             {/* DESCRIPTION */}
-            <pre className="md:text-xl jusitfy-center text-center ">Senior at UT Austin <br/> Full-Stack Software Engineer <br/> Data Enthusiast  </pre>
+            <pre className="md:text-xl jusitfy-center text-center ">Full-Stack Software Engineer<br/> Problem Solver <br/> Texas Ex </pre>
               {/* BUTTONS */}
               <div className="w-full flex gap-4 justify-center">
                 <a href="#portfolio">  

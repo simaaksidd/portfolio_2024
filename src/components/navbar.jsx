@@ -72,9 +72,12 @@ const Navbar = () => {
             {/* LINKS */}
             <div className="hidden md:flex gap-4 w-1/3 ">
                 {links.map(link=>(
-                    <div className="text-black hover:bg-black hover:text-white rounded-md" key ={link.title}>
+                    <motion.div className="text-black hover:bg-black hover:text-white rounded-md" 
+                                key ={link.title}
+                                whileHover={{scale: 1.1}}
+                                transition={{type: "spring", stiffness: 500, damping: 20 }}>
                         <NavLink link={link} key={link.title}/>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
             {/* LOGO */}

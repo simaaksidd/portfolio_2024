@@ -98,7 +98,7 @@ const PortfolioPage = () => {
           exit={{ opacity: 0 }}
         />
         <motion.div 
-          className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl mx-4 relative z-10 overflow-hidden"
+          className=" rounded-2xl shadow-2xl w-full max-w-4xl mx-4 relative z-10 overflow-hidden"
           initial={{ y: 60, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 60, opacity: 0 }}
@@ -142,7 +142,7 @@ const PortfolioPage = () => {
             <div className="flex gap-4">
               <motion.a 
                 href={project.link} 
-                className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                className="px-6 py-3 border border-gray-300 rounded-lg transition-colors"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -243,9 +243,9 @@ const PortfolioPage = () => {
 
   return (
     <section>
-      <div className="py-16">
+      <div className="py-10">
         <div className="mx-auto px-6 max-w-6xl">
-          <div className="mt-24 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className=" grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project) => (
               <motion.div 
                 key={project.id} 
