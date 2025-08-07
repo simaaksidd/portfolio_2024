@@ -9,7 +9,6 @@ const ContactPage = () => {
       animate={{y:"0%"}}
       transition={{duration: 1}}
       >
-        <section className="py-5 relative z-10">
           {/* TITLE */}
           <div className="flex justify-center items-center h-24 my-4">
               <span className="jusitfy-center text-center text-5xl ">Contact Me</span>
@@ -918,10 +917,7 @@ const ContactPage = () => {
                   </div>
               </div>
           </div>
-        </section>
       </motion.div>
-
-
     )
   }
   

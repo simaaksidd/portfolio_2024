@@ -3,23 +3,41 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import PortfolioPage from "../components/portfolio";
 import ContactPage from "../components/contact";
+import { useState, useRef, useEffect } from "react";
+
 
 const Homepage = () => {
+  
+  const [snapReady, setSnapReady] = useState(false);
+  const scrollRef = useRef(null);
+  
+  useEffect(() => {
+    console.log(snapReady)
+    if (snapReady && scrollRef.current){
+      scrollRef.current.classList.add('overflow-y-scroll');
+
+      setSnapReady(false);
+    }
+  }, [snapReady]);
+  
   return (
     <motion.div 
-      className="h-full" 
+      className="" 
       initial={{y:"-200vh"}}
       animate={{y:"0%"}}
       transition={{duration: 1}}
+      duration={{duration: 1}}
+      onAnimationComplete={() => setSnapReady(true)}
     >
-      <section id="home" className="pt-20">
+      <div ref={scrollRef} className="snap-y snap-mandatory h-screen">
+        <section id="home" className="min-h-screen flex items-center justify-center snap-start">
         <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 py-20 items-center">
           {/* IMAGE CONTAINER */}
-          <div className="md:h-1/2 md:w-1/2 sm:h-1/2 sm:w-1/2 lg:h-full lg:w-1/3 relative flex items-center justify-center">
+          <div className="md:h-1/2 md:w-1/2 sm:h-1/2 sm:w-1/2 lg:h-full lg:w-1/2 lg:pr-20 relative flex items-center justify-center">
             <Image src='./pfp.jpg' alt='' height={800} width={400} className="rounded-full"/>
           </div>
           {/* TEXT CONTAINER */}
-          <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center lg:pl-20">
+          <div className="h-1/2 lg:h-full lg:w-2/3 flex flex-col gap-8 items-center justify-center lg:pl-20">
             {/* TITLE */}
             <div className="flex jusitfy-center text-center ">
               <svg xmlns="http://www.w3.org/2000/svg" width="183" height="44" viewBox="0 0 183 44" fill="none">
@@ -39,14 +57,14 @@ const Homepage = () => {
               </div>
           </div>
         </div>
-      </section>
-
-      <section id="portfolio">
+        </section>
+        <section id="portfolio" className="min-h-screen flex items-center justify-center snap-start">
         <PortfolioPage></PortfolioPage>
-      </section>  
-      <section id="contact">
+        </section>  
+        <section id="contact" className="min-h-screen snap-start">
         <ContactPage></ContactPage>
-      </section>
+        </section>
+      </div>
     </motion.div>
   );
 }
