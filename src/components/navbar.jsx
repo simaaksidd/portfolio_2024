@@ -136,9 +136,13 @@ const Navbar = () => {
                                 whileHover={{scale: 1.1}} 
                                 transition={{type: "spring", stiffness: 400, damping: 10}}
                             >
-                                <Link href='/' className='text-sm rounded-md p-1 font-semibold flex items-center justify-center'>
+                                <NavLink 
+                                    href='#home' 
+                                    className='text-sm rounded-md p-1 font-semibold flex items-center justify-center'
+                                    link={links[0]}
+                                    >
                                     <motion.img src="./favicon.ico" alt="" width={24} height={24} />
-                                </Link>
+                                </NavLink>
                             </motion.div>
                             
                             {/* SOCIAL */}

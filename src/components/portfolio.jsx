@@ -11,7 +11,7 @@ export default function PortfolioPage() {
   const aboutContent = {
     name: "Simaak Siddiqi",
     title: "Full-Stack Developer",
-    bio: "I'm a passionate software engineer with expertise in building scalable web applications. With a strong foundation in both frontend and backend technologies, I love creating elegant solutions to complex problems. My experience spans from developing interactive user interfaces to designing robust database architectures.",
+    bio: "I'm a passionate software engineer with expertise in building scalable web applications. My experience spans from developing interactive user interfaces to designing robust database architectures.",
     skills: [
       "React & Next.js",
       "TypeScript & JavaScript",
