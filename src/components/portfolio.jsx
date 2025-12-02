@@ -44,17 +44,18 @@ export default function PortfolioPage() {
     {
       id: 2,
       tech: [
-        "MySQL",
+        "Java",
+        "Spring Boot",
+        "JPA",
         "PostgreSQL",
-        "BigQuery",
-        "Firestore",
-        "MongoDB"
+        "RESTful API",
+        "Postman"
       ],
-      title: "Database Management",
-      description: "This portfolio includes Database management projects from popular frameworks such as MySQL, PostgreSQL, BigQuery, Firestore, mongoDB, etc.",
+      title: "Social Media API",
+      description: "An implementation of a RESTful API using Spring Boot, JPA, and Postgresql that resembles the conceptual model of Twitter.",
       category: "Backend",
-      image: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://github.com/cs327e-fall2023/Simaak-and-Edward",
+      image: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      link: "https://github.com/simaaksidd/social_media_api",
     },
     {
       id: 3,
@@ -101,6 +102,21 @@ export default function PortfolioPage() {
       image: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       link: "https://github.com/simaaksidd/portfolio_2024",
     },
+    {
+      id: 6,
+      tech: [
+        "MySQL",
+        "PostgreSQL",
+        "BigQuery",
+        "Firestore",
+        "MongoDB"
+      ],
+      title: "Database Management",
+      description: "This portfolio includes Database management projects from popular frameworks such as MySQL, PostgreSQL, BigQuery, Firestore, mongoDB, etc.",
+      category: "Backend",
+      image: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      link: "https://github.com/cs327e-fall2023/Simaak-and-Edward",
+    },
   ];
 
   const handleScroll = (e) => {
@@ -145,6 +161,17 @@ export default function PortfolioPage() {
         >
           Projects
         </button>
+        
+        <button 
+          onClick={() => { setActiveTab('resume'); }}
+          className={`px-8 py-3 rounded-lg font-mono text-sm transition-colors ${
+            activeTab === 'resume' 
+              ? 'bg-black text-white' 
+              : 'bg-white text-black hover:bg-gray-200'
+          }`}
+        >
+          Resume
+        </button>
       </div>
 
       {/* Content */}
@@ -185,7 +212,16 @@ export default function PortfolioPage() {
               </div>
             </div>
           </div>
-        ) : (
+          ) : activeTab === 'resume' ? (
+            // Resume Page
+            <div className="h-full rounded-lg overflow-hidden bg-gray-100">
+              <iframe
+                src="/resume.pdf"
+                className="w-full h-full"
+                title="Resume"
+              />
+            </div>
+          ) : (
           // Projects Gallery
           <>
             <div 
