@@ -5,9 +5,9 @@ import NavLink from "./navLink";
 import { motion } from "framer-motion";
 
 const links = [
-    {url: "#home", title: "Home"},
-    {url: "#portfolio", title: "Portfolio"},
-    {url: "#contact", title: "Contact"},
+    {url: "#home", title: "Home", id: "home"},
+    {url: "#portfolio", title: "Portfolio", id: "portfolio"},
+    {url: "#contact", title: "Contact", id: "contact"},
 ];
 
 const Navbar = () => {
@@ -74,7 +74,7 @@ const Navbar = () => {
                 {links.map(link=>(
                     <motion.div className="text-black hover:bg-black hover:text-white rounded-md" 
                                 key ={link.title}
-                                whileHover={{scale: 1.1}}
+                                whileHover={{scale: 1.05}}
                                 transition={{type: "spring", stiffness: 500, damping: 20 }}>
                         <NavLink link={link} key={link.title}/>
                     </motion.div>
@@ -113,10 +113,10 @@ const Navbar = () => {
                 { open && (
                 <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40">
                     {links.map((link) => (
-                        <motion.div variants={listitemvariants} className=""  key={link.title}>
-                            <Link href={link.url}>
+                        <motion.div variants={listitemvariants} className=""  key={link.title} onClick={() => setOpen(false)}>
+                            <NavLink link={link}>
                                 {link.title}
-                            </Link>
+                            </NavLink>
                         </motion.div>
                     ))}
                 </motion.div>

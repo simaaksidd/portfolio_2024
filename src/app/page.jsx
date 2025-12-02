@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import PortfolioPage from "../components/portfolio";
 import ContactPage from "../components/contact";
 import { useState, useRef, useEffect } from "react";
+import NavLink from "@/components/navLink";
 
 
 const Homepage = () => {
@@ -48,12 +49,12 @@ const Homepage = () => {
             <pre className="md:text-xl jusitfy-center text-center ">Full-Stack Software Engineer<br/> Problem Solver <br/> Texas Ex </pre>
               {/* BUTTONS */}
               <div className="w-full flex gap-4 justify-center">
-                <a href="#portfolio">  
+                <NavLink link={{url: "#portfolio", title: "Portfolio", id: "portfolio"}}>  
                   <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black" >View My Work</button>
-                </a>
-                <a href="#contact">  
+                </NavLink>
+                <NavLink link={{url: "#contact", title: "Contact", id: "contact"}}>  
                   <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:bg-white hover:text-black">Contact Me</button>
-                </a>
+                </NavLink>
               </div>
           </div>
         </div>
