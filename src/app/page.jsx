@@ -65,7 +65,16 @@ const Homepage = () => {
         <section id="contact" className="min-h-screen snap-start">
         <ContactPage></ContactPage>
         </section>
-      </div>
+
+        {/* Footer */}
+        <footer className="border-t border-gray-300 mt-32 py-8 bg-gray-100">
+          <div className="max-w-7xl mx-auto px-12 text-center">
+            <p className="text-sm text-black font-mono">
+              © 2025 Simaak R. Siddiqi. Full-Stack Software Engineer.
+            </p>
+          </div>
+        </footer>
+        </div>
     </motion.div>
   );
 }
