@@ -9,41 +9,12 @@ const ContactPage = () => {
       animate={{y:"0%"}}
       transition={{duration: 1}}
       >
-      <section className="py-20 lg:py-[120px] relative z-10">
-        <div className="container">
-            <div className="flex flex-wrap lg:justify-between -mx-4">
-              <div className="w-full lg:w-1/2 xl:w-6/12 px-12 ">
-                  <div className="max-w-[570px] mb-5 lg:mb-0">
-                    <div className="max-w-[570px] mb-5 lg:mb-0">
-                      <h2
-                          className="
-                          text-dark
-                          font-bold
-                          text-[32px]
-                          sm:text-[40px]
-                          lg:text-[36px]
-                          xl:text-[40px]
-                          justify-center
-                          text-center
-                          "
-                          >
-                          I am currently... 
-                      </h2>
-                      <motion.h2
-                      className="max-w-[570px] mb-12 lg:mb-0 justify-center text-center text-dark font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px] text-green-700"
-                      initial={{opacity:0}}
-                      animate={{opacity:1}}
-                      transition={{duration: 1, delay:2}}
-                      >
-                        AVAILABLE
-                      </motion.h2>
-                    </div>
-                    <p className="text-base text-body-color leading-relaxed mb-9 mt-16">
-                        If you wish to contact me, thank you for taking the time out of your day to write to me! Please send your full name, email, phone number (optional), and send a small message describing your interest in me. I will be sure to respond to the message ASAP!
-                    </p>
-
-                  </div>
-              </div>
+          {/* TITLE */}
+          <div className="flex justify-center items-center h-24 my-4">
+              <span className="jusitfy-center text-center text-5xl ">Contact Me</span>
+          </div>
+          {/* CONTACT PAGE */}
+          <div className="flex flex-col items-center -mx-4 py-10">
               <div className="w-full lg:w-1/2 xl:w-5/12 px-4 z-50">
                   <div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg z-50">
                     <form>
@@ -945,12 +916,8 @@ const ContactPage = () => {
                     </div>
                   </div>
               </div>
-            </div>
-        </div>
-      </section>
+          </div>
       </motion.div>
-
-
     )
   }
   
