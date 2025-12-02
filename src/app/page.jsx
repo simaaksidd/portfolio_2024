@@ -1,10 +1,10 @@
 "use client"
-import Image from "next/image";
 import { motion } from "framer-motion";
 import PortfolioPage from "../components/portfolio";
 import ContactPage from "../components/contact";
 import { useState, useRef, useEffect } from "react";
 import NavLink from "@/components/navLink";
+import ProfileSection from "@/components/pfp";
 
 
 const Homepage = () => {
@@ -35,7 +35,7 @@ const Homepage = () => {
         <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 py-20 items-center">
           {/* IMAGE CONTAINER */}
           <div className="md:h-1/2 md:w-1/2 sm:h-1/2 sm:w-1/2 lg:h-full lg:w-1/2 lg:pr-20 relative flex items-center justify-center">
-            <Image src='./pfp.jpg' alt='' height={800} width={400} className="rounded-full"/>
+            <ProfileSection></ProfileSection>
           </div>
           {/* TEXT CONTAINER */}
           <div className="h-1/2 lg:h-full lg:w-2/3 flex flex-col gap-8 items-center justify-center lg:pl-20">
