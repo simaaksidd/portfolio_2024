@@ -11,7 +11,7 @@ export default function PortfolioPage() {
   const aboutContent = {
     name: "Simaak Siddiqi",
     title: "Full-Stack Developer",
-    bio: "I'm a passionate software engineer with expertise in building scalable web applications. My experience spans from developing interactive user interfaces to designing robust database architectures.",
+    bio: "University of Texas Class of 2025. Hiker, Gamer, Solver of Problems, Wordle Enthusiast. ",
     skills: [
       "React & Next.js",
       "TypeScript & JavaScript",
@@ -20,7 +20,7 @@ export default function PortfolioPage() {
       "AWS & Docker",
       "Data Analysis"
     ],
-    image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: "/project_imgs/about_me.jpeg"
   };
 
   const projects = [
@@ -38,7 +38,7 @@ export default function PortfolioPage() {
       title: "Crown Chess",
       description: "This is a full stack chess app inspired by apps like LiChess and Chess.com. You can play with friends, train your skills against AI, or watch the best chess players' matches.",
       category: "Full-Stack",
-      image: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      image: "/project_imgs/crown_chess.png",
       link: "",
     },
     {
@@ -54,7 +54,7 @@ export default function PortfolioPage() {
       title: "Social Media API",
       description: "An implementation of a RESTful API using Spring Boot, JPA, and Postgresql that resembles the conceptual model of Twitter.",
       category: "Backend",
-      image: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/project_imgs/social_media_api.png",
       link: "https://github.com/simaaksidd/social_media_api",
     },
     {
@@ -69,7 +69,7 @@ export default function PortfolioPage() {
       title: "DSA",
       description: "These projects cover a wide spectrum of DSA topics, from basic scripting to advanced data structures and algorithms.",
       category: "Backend",
-      image: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      image: "/project_imgs/dsa.png",
       link: "https://github.com/simaaksidd/Programming_Assignments",
     },
     {
@@ -84,7 +84,7 @@ export default function PortfolioPage() {
       title: "Data Analysis",
       description: "This semester-long group project focused on the life-cycle of data, including collecting, processing, cleaning, analyzing and interpreting Insurance claims data to determine various characteristics of differing insurace claims.",
       category: "Backend",
-      image: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/project_imgs/data.png",
       link: "https://github.com/simaaksidd/Insurance_Claims",
     },
     {
@@ -99,7 +99,7 @@ export default function PortfolioPage() {
       title: "Personal Portfolio",
       description: "A responsive portfolio website built with modern web technologies. Features smooth animations, responsive design, and optimized performance across all devices.",
       category: "Frontend",
-      image: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/project_imgs/portfolio.png",
       link: "https://github.com/simaaksidd/portfolio_2024",
     },
     {
@@ -114,7 +114,7 @@ export default function PortfolioPage() {
       title: "Database Management",
       description: "This portfolio includes Database management projects from popular frameworks such as MySQL, PostgreSQL, BigQuery, Firestore, mongoDB, etc.",
       category: "Backend",
-      image: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      image: "/project_imgs/databases.png",
       link: "https://github.com/cs327e-fall2023/Simaak-and-Edward",
     },
   ];
